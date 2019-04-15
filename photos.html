@@ -64,7 +64,7 @@
 				<div class="fullwidth-block">
 					<div class="container">
 
-						<section class="col-md-12" style="text-align: center; min-height: 500px; font-size: 36px;">
+						<section id="wait" class="col-md-12" style="text-align: center; min-height: 500px; font-size: 36px;">
 							<p>Please wait...</p>
 							<p id="demo"></p>
 
@@ -82,11 +82,24 @@
 
 									if (distance < 0) {
 										clearInterval(x);
-										document.getElementById("demo").innerHTML = "EXPIRED";
+										document.getElementById("wait").style.display = "none";
 									}
 								}, 1000);
 							</script>
 
+						</section>
+						
+						<section class="thumbnails" id="summer">
+							<div>
+								<a href="images/01-summer-full.png">
+									<img src="images/01-summer-thumbs.png">
+								</a>
+							</div>
+							<div>
+								<a href="images/01-summer@2x.jpg">
+									<img src="images/01-summer.jpg">
+								</a>
+							</div>
 						</section>
 
 					</div>
